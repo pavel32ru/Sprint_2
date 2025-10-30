@@ -22,11 +22,5 @@ public class Main {
         System.out.println("Общая сумма товаров без скидки: " + cart.getTotalPriceWithoutDiscount() + " руб.");
         System.out.println("Общая сумма товаров со скидкой: " + cart.getTotalPriceWithDiscount() + " руб.");
         System.out.println("Сумма вегетарианских продуктов без скидки: " + cart.getTotalPriceVegetarianWithoutDiscount() + " руб.");
-
-        // Дополнительная информация для проверки
-        System.out.println("\n=== ДЕТАЛЬНАЯ ИНФОРМАЦИЯ ===");
-        System.out.println("Мясо: " + meat.getAmount() + " кг × " + meat.getPrice() + " руб. = " + meat.calculateTotalPrice() + " руб.");
-        System.out.println("Красные яблоки: " + redApples.getAmount() + " кг × " + redApples.getPrice() + " руб. = " + redApples.calculateTotalPrice() + " руб. (скидка " + redApples.getDiscount() + "%)");
-        System.out.println("Зеленые яблоки: " + greenApples.getAmount() + " кг × " + greenApples.getPrice() + " руб. = " + greenApples.calculateTotalPrice() + " руб. (скидка " + greenApples.getDiscount() + "%)");
     }
 }
